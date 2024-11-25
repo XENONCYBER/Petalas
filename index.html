@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petalas - Color Analysis</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Petalas</h1>
+        <p>Extract, Organize, and Recommend Colors for Frontend Design</p>
+    </header>
+
+    <main>
+        <section id="input-section">
+            <h2>Input Website URL</h2>
+            <p>Enter a website URL to analyze the colors used on it:</p>
+            <input type="text" id="url-input" placeholder="https://example.com">
+            <button id="analyze-btn">Analyze Colors</button>
+        </section>
+
+        <section id="output-section">
+            <h2>Results</h2>
+            <div id="colors-container">
+                <h3>Extracted Colors</h3>
+                <div id="extracted-colors"></div>
+            </div>
+
+            <div id="shades-container">
+                <h3>Generate Shades</h3>
+                <input type="color" id="color-picker" value="#3498db">
+                <button id="generate-shades">Generate Shades</button>
+                <div id="shades-output"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Petalas. Designed for a better UI/UX experience.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
